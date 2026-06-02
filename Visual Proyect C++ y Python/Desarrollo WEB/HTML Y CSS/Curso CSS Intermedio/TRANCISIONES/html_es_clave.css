@@ -1,0 +1,30 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.box_1
+{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: aliceblue;
+    font-size: 30px;
+    font-family:sans-serif ;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    transition: color, background-color , left, top;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in-out;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+body:hover .box_1
+{
+    background-color:black ;
+    color: azure; 
+    left: 200px;
+    top: 150px;
+}

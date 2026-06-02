@@ -1,0 +1,33 @@
+/*Esta parte nadamas es para saber el como sirve el flex-wrap, en resumen es para configurar el como va a interaccionar cuando la pagina web se achique y este se pueda adaptar al tamaño que se le de. Y dentro de esta clase tenemos dos propiedades, "wrap" (el que hace que se adapte a la pagina web teniendo diferentes interacciones con row y column, cada uno teniendo su propia interaccio)"wrap-inverse" (lo mismo que wrap pero de forma inversa (depende de como este ordenada sera una interaccion diferente.)) y "flow" (este ultimo resume el "flex-direction" y el "flex-wrap" en un sola linea de vodigo).*/
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+.flexbox
+{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex-item
+{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #45f;
+    color: azure;
+    
+}
+.flex-item.flex-item:nth-child(2n){
+    background-color: #45a;
+}
+.item--box_column
+{
+    flex-flow: column wrap;
+}

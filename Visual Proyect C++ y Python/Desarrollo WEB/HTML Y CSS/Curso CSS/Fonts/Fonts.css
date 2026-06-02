@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Roboto_sl;
+    src: url("Roboto_Slab/static/RobotoSlab-Regular.ttf");
+}
+@font-face {
+    font-family: Roboto;
+    src: url("Roboto/static/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: Monserrat;
+    src: url("Montserrat/static/Montserrat-Italic.ttf");
+}
+@font-face {
+    font-family: PlayFair;
+    src: url("Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: Roboto_it;
+    src: url("Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+    font-family: Monserrat_it;
+    src: url("Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: PlayFair_it;
+    src: url("Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+}

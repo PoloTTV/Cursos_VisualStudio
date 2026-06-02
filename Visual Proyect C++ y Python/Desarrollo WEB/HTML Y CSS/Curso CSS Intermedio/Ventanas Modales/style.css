@@ -1,0 +1,39 @@
+.body_1{
+    margin: 0;
+    width: auto;
+    height: auto;
+    background: linear-gradient(rgb(111, 169, 255),rgb(192, 190, 190),transparent)fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+dialog::backdrop
+{
+    background-color: black;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+.modal
+{
+    margin: auto;
+    background-color: azure;
+    box-shadow: 0 0 10px 1px black;
+    border-radius:10px ;
+    box-sizing: border-box;
+}
+.modal--close_botton
+{
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    margin: 0;
+    color: azure;
+    background-color: black;
+    border: none;
+    height: 30px;
+    width: 100px;
+    box-sizing: border-box;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 0 0 0 4;
+    
+}

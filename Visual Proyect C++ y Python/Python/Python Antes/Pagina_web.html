@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>"Informacion de Aruino"</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Arduino Info</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resources">Recursos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="container mt-5">
+            <section id="about">
+                <h2>Acerca de Arduino</h2>
+                <p>Arduino es una plataforma de hardware libre que permite crear proyectos interactivos. Es ampliamente utilizado por aficionados y profesionales para desarrollar prototipos y productos finales.</p>
+            </section>
+
+            <section id="contact" class="mt-5">
+                <h2>Contacto</h2>
+                <form>
+                    <div class="form-group
+">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="form-group
+">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+                    </div>
+                    <div class="form-group
+">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Ingrese su mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </section>
+            <section id="projects" class="mt-5">
+                <h2>Proyectos Destacados</h2>
+                <ul>
+                    <li>Proyecto 1: Control de luces con Arduino</li>
+                    <li>Proyecto 2: Sensor de temperatura y humedad</li>
+                    <li>Proyecto 3: Robot seguidor de línea</li>
+                </ul>
+            </section>
+            <section id="resources" class="mt-5">
+                <h2>Recursos Útiles</h2>
+                <ul>
+                    <li><a href="https://www.arduino.cc/">Sitio Oficial de Arduino</a></li>
+                    <li><a href="https://www.instructables.com/">Instructables - Proyectos de Arduino</a></li>
+                    <li><a href="https://www.youtube.com/results?search_query=arduino+tutoriales">Tutoriales en YouTube</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer class="text-center mt-5">
+            <p>&copy; 2023 Arduino Info. Todos los derechos reservados.</p>
+            <p>Desarrollado por [Hugo]</p>
+        </footer>
+    </body>
+</html>

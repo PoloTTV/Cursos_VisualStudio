@@ -1,0 +1,18 @@
+/*Esta propiedad es para ver como se relaciona el contenido de una imagen dentro de un contenedor y tenemos varias formas para relacionarlo como puede ser un "container" (para que se adapte a una resolucion un poco mas pequeña), "fill" (para que se adapte al contenedor original), "cover" (para que solo se muestre una aprte de la imagen en su resolucion original y con "object-position" cambiar el lugar o la parte de la imagen que nosotros querramos) y "none" (este es para mostrar la resolucion original sin importarnos de que tamaño es el contenedor que lo mantiene).*/
+img{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+}
+.container
+{
+    object-fit: contain;
+}
+.cover
+{
+    object-fit:cover;
+}
+.fill
+{
+    object-fit: fill;
+}

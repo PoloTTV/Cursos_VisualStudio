@@ -1,0 +1,51 @@
+/*POSITION RELATIVE.
+Este tipo de cajas con la posicion RELATIVA, sirve paraa hacer varias cosas como diapositivas, transiciones, o incluso alguna animacion con ellas, basta que pongaamos "position:relative" en algun div para que funcione y con las opciones "left" o "top" ya sea en numeros negativos o positivos haran que se muevan tantos px o la unidad de medida que se utilice, igual el "z-index" sirve para sobreponer elementos entre cajas, como un sistema de apilamiento para haacer animaciones como la siguiente.*/
+.box, .second_box
+{
+    
+    margin: 100px;
+    border: 2px solid black;
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
+}
+.box__item, .second_box__item
+{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top:20px ;
+    margin-bottom: 6px;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.item--box_2
+{
+    left: 35px;
+    top:-40px;
+    background-color: aqua;
+}
+.item--box_3
+{
+    top:-80px;
+    background-color: rgb(153, 15, 15);
+    z-index: 10;
+    margin-bottom: 0 ;
+}
+.item--box_1:hover, .item--box_2:hover, .item--box_3:hover
+{
+    background-color: rgb(107, 199, 153);
+    z-index: 20;
+}
+/*POSITION ABSOLUTE.
+Como aqui podemos observar, la caja 1.2 esta hastaa arriba de la pagina, ya que el punto de referencia cuando la posicion esta en ABSOLUTA toma de referencia el elemento <html>, si queremos que tome de referencia a nuestra cajitaa, tenemos que poner que la caja grande (aqui seria el ".second_box") como una posicion RELATIVA o relative, esto para que si se tome como un punto de referencia, igual tiene los mismos para moverse, top y left (he igual de adelante o atras con "z-index"), y junto con esto hacer maas cosas pero sin que tenga algun espacio por decirlo "fisico". */
+.item_2--box_1
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}

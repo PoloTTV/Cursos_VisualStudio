@@ -1,0 +1,19 @@
+/*El Overflow Nos funciona para cuaando tengamos una caja con mucho texto este no se nos desborded de manera grande y este se pueda almacenar de forma segura sin desbordos, ya sea con su funcionalidad auto, hidden, clip, o scroll, dependiendo de su uso*/
+.con_overflow
+{
+    height: 220px;
+    width: 220px;
+    margin: auto;
+    border: 2px solid black;
+    overflow: auto;
+
+} 
+.sin_overflow
+{
+    height: 220px;
+    width: 220px;
+    margin: auto;
+    border: 2px solid black;
+    margin-top: 20px;
+    overflow: none;
+}

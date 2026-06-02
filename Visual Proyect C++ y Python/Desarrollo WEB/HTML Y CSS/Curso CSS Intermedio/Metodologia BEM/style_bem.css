@@ -1,0 +1,48 @@
+/*  Este comentario es para adescribir esta metodologia llamada BEM ó por sus siglas Block, Element, Modifycate.
+    En resumen el funcionamiento de estaa metodologia aes organizar todo por bloques y en su nombre el funcionamiento de este bloque, poner los elementos como "items" para organizar mejor el bloque dentro de las clases, y si se le quiere meter una modificacion al un elemento en ESPECIFICO se le pone un espacio y el nombre de la clase, ej.
+    <li class="list__item  item--border">*/
+.body_1
+{
+    height: auto;
+    width: auto;
+    background: linear-gradient(rgb(115, 192, 255), rgb(238, 238, 238)) fixed ;
+    font-family: sans-serif;
+    margin-top: 10px;
+    color: rgb(58, 59, 59);
+}
+.tittle{
+    height: 80%;
+    width: 80%;
+    box-sizing: border-box;
+    margin: auto;
+    border:3px, solid, rgb(39, 39, 39);
+    border-radius: 10px;
+    padding:40px;
+}
+.list__item, .content_text__item
+{
+    margin-top: 10px;
+    border: 1px, solid, rgb(112, 118, 119);
+    border-radius: 8px;
+    padding: 10px;
+    list-style: square;
+}
+.item--tittle::first-letter
+{
+    font-weight: bolder;
+}
+.span_bold
+{
+    font-weight: bolder;
+    font-size: large;
+}
+.item--no_border
+{
+    border: none;
+    margin-top:5px;
+}
+.list--border, .item--border
+{
+    border: 1px, solid, rgb(112, 118, 119);
+    border-radius: 8px;
+}

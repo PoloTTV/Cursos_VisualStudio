@@ -1,0 +1,51 @@
+body
+{
+    width: auto;
+    height: 2000px;
+    margin: 0px;
+    padding: 0;
+    font-family: sans-serif;
+}
+.nav
+{
+    margin: 0;
+    height: auto;
+    width: 100%;
+    background-color: rgb(43, 83, 121);
+    text-align: center;
+    box-sizing: border-box;
+    position:fixed;
+
+}
+.nav_item
+{
+    display: inline-block;
+    width: auto;
+    
+}
+.nav_link
+{
+    margin: 10px 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(60, 207, 207);
+}
+.nav_link:hover
+{
+    background-color: #6af;
+    color:azure;
+    height: 10px;
+    border-radius: 10px;
+}
+.item--log_in
+{
+    text-align: right;
+    background-color: azure;
+    border: 1px, solid, azure;
+    border-radius: 10px;
+}
+.item--log_in:hover
+{
+    background-color: #6af;
+    color:azure;
+}

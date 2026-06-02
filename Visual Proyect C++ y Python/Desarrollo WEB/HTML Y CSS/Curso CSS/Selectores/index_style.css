@@ -1,0 +1,16 @@
+html{
+    background-color: wheat;
+}
+h1{
+    color: slategray;
+}
+p{
+    color: slategray;
+    font-style:italic
+}
+.ing{
+    color:brown;
+    font-size: medium;
+    font-weight: 100;
+}
+

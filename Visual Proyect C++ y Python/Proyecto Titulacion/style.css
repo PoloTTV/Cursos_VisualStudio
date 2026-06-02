@@ -1,0 +1,361 @@
+@media screen {
+    
+
+body
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+    overflow: auto;
+}
+.header
+{
+    width: auto;
+    height: 100vh;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    background:linear-gradient(to left, rgb(189, 189, 189), rgb(239, 243, 247), rgb(239, 243, 247), rgb(239, 243, 247), rgb(189, 189, 189));
+    
+}
+.header_delay
+{
+    z-index: 1;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: auto;
+    margin-right: 0;
+    max-width: 700px;
+    text-align: center;
+    min-width: 200px;
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: logoEntrada 2s ease-out forwards;
+}
+@keyframes logoEntrada  {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+}
+.header_tittle
+{
+    z-index: 2;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-left: 0;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: auto;
+    max-width: 700px;
+    text-align: center;
+    min-width: 200px;
+    color: rgb(26, 26, 26) ;
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: logoEntrada 1s ease-out forwards;
+}
+.h1_tittle
+{
+    z-index: 2;
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+}
+.header_text
+{
+    font-size: 1.5rem;
+    margin-top: 70px;
+}
+.nav
+{
+    z-index: 6;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position:sticky;
+    top:-0;
+    left:-0;
+    background: linear-gradient(to left, rgb(31, 31, 31), black, rgb(31, 31, 31));
+    border-bottom:1px solid black ;
+    border-radius: 1px 1px 20px 20px;
+}
+.nav__box
+{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    justify-items: center;
+    align-content: space-around;
+}
+.nav__ul
+{
+    width: auto;
+    display: flex;
+    text-align: center;
+    margin:3px 0px ;
+    padding: 2%;
+    justify-items: center;
+    align-items: center;
+}
+.nav__items
+{
+    list-style: none;
+    flex-flow: row wrap;
+    flex: 2 2 200px;
+    text-align: center;
+    width: auto;
+    padding: 1px 10px;
+    margin-left:50px ;
+    text-align: center;
+    align-content: space-around;
+    color: azure;
+    max-width: 300px;
+    transition: all 0.1s;
+}
+.nav__items:hover
+{
+    border: 1px solid rgb(121, 121, 121);
+    border-radius: 10px;
+    background-color: rgb(121, 121, 121);
+    color: black;
+}
+.nav__items:hover:last-child
+{
+    border: none;
+    background-color: inherit;
+}
+.nav__link
+{
+    color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.2s;
+    padding: auto;
+    align-content: space-around;
+}
+.nav__link:hover{
+    color: black;
+}
+.nav__items--img
+{
+    width: 50px;
+    height: 50px;
+    
+}
+
+.main_inf
+{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 100px;
+    align-content: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+.main_inf_flexbox
+{
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    align-content: center;
+    animation: text_main_p 20s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: scroll();
+    animation-iteration-count: infinite;
+
+}
+p{
+    margin: auto;
+}
+@keyframes text_main_p
+{
+    0%
+    {
+        opacity: 1;
+    }
+    80% 
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0.1;
+    }
+
+}
+.tittle_main
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5rem;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 250px;
+}
+.subtitle_main
+{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+@keyframes text_animation
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.sub_main_best
+{
+    margin-top: 80px;
+    margin-bottom: 80px ;
+}
+.img__main
+{
+    height: 500px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+}
+.img__main--text
+{
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 400px;
+    margin: 20px 0;
+    animation:image_main 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes image_main
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    10%
+    {
+        opacity: 0.7;
+        transform: translateY(inherit);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: initial;
+    }
+}
+.elevator_pitch_video
+{
+    animation: none;
+}
+.video_pitch
+{
+    max-width: 1080px;
+    height: auto;
+}
+.footer_general
+{
+    width: 100%;
+    margin-top: 120px;
+    height: auto;
+    background: linear-gradient(to left, rgb(31, 31, 31), rgb(29, 29, 29), rgb(31, 31, 31));
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_text
+{
+    padding: 10px;
+    margin:auto;
+}
+.footer_div_link
+{
+    padding: 20px;
+}
+.footer_link
+{
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex: 1 1 100px;
+    flex-flow: row wrap;
+}
+.footer_link:first-of-type
+{
+    padding: 10px 0px;
+}
+@media screen and (max-width:500px) and (min-width:300px){
+    .header__img
+    {
+        max-width: 200px;
+        height: auto;
+    }
+    .header
+    {
+        font-size: 15px;
+    }
+    .header_tittle
+    {
+        margin-right: 30px;
+    }
+    .nav__items
+    {
+        padding: 0px;
+    }
+    .nav__items:first-of-type
+    {
+        margin: 0px 10px;
+    }
+    .nav__items--img
+    {
+        height: 50px;
+        width: 50px;
+    }
+    .tittle_main
+    {
+        font-size: 2.3rem;
+        margin: 50px 0px;
+        margin-top: 10px;
+    }
+    .subtitle_main
+    {
+        margin: 40px;
+    }
+    .img__main, .img__main--text
+    {
+        height: auto;
+        width: 300px;
+    }
+    .video_pitch
+    {
+        max-width: 300px;
+        height: auto;
+    }
+}

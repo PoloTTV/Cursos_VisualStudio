@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Cascada Y Especifidad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    
+    
+    <!--Funcion !important-->
+    <!--Aunque tambien podria tener mas Especidad "Indirectamente" por la funcion !important ya que este hara que aunque este todas las especificaciones la tendra como proridad este-->
+    <h1 class="Titulo" id="tittle">Titulo</h1>
+    <!--Este Titulo tendra una especidad de (1,0,0) por el ID que tiene o a la que se haria una referencia en CSS-->
+        <h1 id="tittle">Titulo</h1>
+    <!-- Este titulo tendra una Especifidad de (0,1,0) por la "class" que tiene-->
+        <h1 class="Titulo">Titulo</h1>
+        <!--Este titulo tendra una especifidad de (0,0,1) lo que significa que seria como un nivel 1, osea, si solo tiene este elemento algun color lo tomara o si tiene alguna class o Id lo cambiara sin importar-->
+        <h1>Titulo</h1>
+    </div>
+</body>
+</html>

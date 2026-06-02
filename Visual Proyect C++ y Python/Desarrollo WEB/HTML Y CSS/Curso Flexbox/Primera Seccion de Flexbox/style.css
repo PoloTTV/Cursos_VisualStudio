@@ -1,0 +1,27 @@
+/*Esta parte nadamas es para saber el como sirve el flexbox (o caja que se acapta al tamaño de la pagina web) y algunas de sus direcciones como "column" (para que vaya de arriba a abajo), "row" (este es para que los objetos esten en forma horizontal) y sus "inversed" (osea de derecha a izquierda, esto tambien modifica al texto)*/
+body{
+    font-family: sans-serif;
+    
+}
+.flexbox
+{
+
+    display: flex;
+    flex-direction: row,column;
+}
+.flex-item
+{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #45f;
+    color: azure;
+}
+.flex-item.flex-item:nth-child(2n){
+    background-color: #45a;
+}

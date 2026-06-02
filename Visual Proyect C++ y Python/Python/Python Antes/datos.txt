@@ -1,0 +1,4 @@
+Nombre: Hugo
+Edad: 19
+Trabajo: Ing. de Mecatronica
+Num. de teléfono: No proporcionado

@@ -1,0 +1,60 @@
+body
+{
+    width: auto;
+    height: auto;
+    background:linear-gradient(rgb(121, 169, 224),rgb(152, 187, 226),rgb(241, 241, 241));
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(32, 32, 32)
+    
+}
+.box_tittle
+{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 20px;
+}
+.box_text
+{
+    box-sizing: border-box;
+    height: auto;
+    width: 80%;
+    height: auto;
+    border: 2px solid black;
+    margin: auto;
+}
+/*Este sirve para poner la primera letra de alguna frase o palabra de algun estilo diferente*/
+.tittle_h1::first-letter
+{
+    color:rgb(43, 44, 44);
+    font: optional;
+}
+/*Este sirve para poner marcador del LI de diferente forma*/
+.list_1::marker
+{
+    color:aliceblue;
+}
+.list_1
+{
+    width: 70%;
+    text-align:left ;
+    border:1px solid black;
+    padding:10px;
+    margin: 10px;
+}
+/*Este es para poner textos que no sean marcados para los usuarios y solo se podra ver desde la parte de "Inspeccionar pagina", este principalmente es para poner antes de cualquier otro codigo*/
+.list_1::before
+{
+    content: 'Tittle ';
+    color:blue;
+}
+/*Y este es para poner DESPUES de el contenido que estemos poniendo en el LI*/
+.list_1::after
+{
+    content: 'Content ';
+    color:red;
+}

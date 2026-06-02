@@ -1,0 +1,40 @@
+.body_1
+{
+    height: 3000px;
+    width: auto;
+    background: linear-gradient(rgb(43, 221, 221), azure) fixed;
+}
+.nav
+{
+    height: 70px;
+    width: 100vw;
+    background-color: rgb(154, 223, 255);
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+.nav_list__item
+{
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(67, 165, 252);
+    border: 2px solid rgb(67, 165, 252);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    z-index: 2;
+}
+.nav_list_link
+{
+    width: 10%;
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(84, 84, 235);
+}
+.nav_list__item:hover{
+    background-color: azure;
+}

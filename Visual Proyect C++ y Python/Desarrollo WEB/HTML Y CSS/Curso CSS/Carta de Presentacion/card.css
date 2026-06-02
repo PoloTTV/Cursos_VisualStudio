@@ -1,0 +1,98 @@
+html{
+        background:radial-gradient(#d8d8d8,black);
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+}
+body{
+    margin: auto;
+    width: 1000px;
+    height: 1000px;
+}
+.card_t{
+    background-color: rgba(128, 128, 128, 0.308);
+    height: 150px;
+    width: 500px;
+    margin:auto;
+    border-top: 4px solid whitesmoke;    
+    border-right: 4px solid gainsboro;
+    margin-top: 20px;
+    border-radius: 60px 30px;
+    color:rgba(0, 0, 0, 0.671)
+}
+.card_tex
+{
+    background-color: rgba(128, 128, 128, 0.699);
+    width: 450px;
+    height: 150px;
+    margin:auto;
+    border-top: 4px solid whitesmoke;    
+    border-right: 4px solid gainsboro;
+    border-radius: 60px 30px;
+    margin-top: 30px;
+}
+.c_text_p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    text-align: justify;
+    padding:10px ;
+
+}
+.c_text_h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+        padding:auto;
+
+}
+.inf_us{
+    height: 100px;
+    width: 600px;
+    background: gray;
+    border-top: 4px solid rgba(245, 245, 245, 0.199);    
+    border-right: 4px solid gainsboro;
+    border-radius: 60px 30px;
+    margin: auto;
+    margin-top: 100px;
+}
+.inf_dev{
+    height: 100px;
+    width: 600px;
+    background: gray;
+    border-top: 4px solid whitesmoke;    
+    border-right: 4px solid gainsboro;
+    border-radius: 60px 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+input{
+    text-align: center;
+    width: 150px;
+    margin:0 20px;
+    color:black;
+    background: grey;
+    border:none;
+    border-bottom:1px black solid
+}
+.c_input_p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    font-style: oblique;
+    text-align: center;
+    padding: auto;
+}
+.img_1
+{
+    box-sizing: border-box;
+    height: 150px;
+    width: 1000px;
+    background-color: #bbaaaa;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background:url("/Curso HTML/imagenes/486240175_17898790686160246_2883958070321719935_n.webp") top / cover fixed;
+    background-position-y:  center;
+    border: 6px #a19797e1 solid;
+    border-radius: 6px 30px;
+}

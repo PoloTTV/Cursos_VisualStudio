@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario De Contacto</title>
+    <link rel="stylesheet" href="Options_and_selects.css">
+    <link rel="icon" href="/Curso HTML/imagenes/pegar.png">
+
+</head>
+<body>
+    <div class="_box_1">
+        <h1 class="_tittle">Formulario De Contacto</h1>
+        <form class="_form">
+            <fieldset class="_fielset">
+                <legend class="_legend"><h2>Infomacion Basica</h2></legend>
+                    <!--NOMBRE COMPLETO-->
+                    <label for="nom_c">Nombres</label>
+                    <div>
+                    <input name="name_user" class="_input_inf" type="Text" placeholder="Nombre Completo" required id="nom_c">
+                    </div>
+                    <label for="age_user">Edad</label>
+
+                    <div>
+                        <input name="age_usr" class="_input_inf" type="number" placeholder="Ingrese Su Edad" required id="age_user">
+                    </div>
+                    <!--OPTION & SELECTS-->
+            <div>
+                <label>Eliga Su Oficio Actual</label>
+                <select name="type_user_office" class="_input_inf" required>
+                    <option value="ing_mecatronic" ">Ing. Mecatronica</option>
+                    <option value="ing_programmer"  >Ing. Programacion</option>
+                    <option value="ing_electronic"  >Ing. Electronica</option>
+                    <option value="ing_mecanic"  >Ing. Mecanico</option>
+                    <option value="ing_electromecanic"  >Ing. Electromecanico</option>
+                    <option value="ing_market"  >Ing. En Mercadotecnia</option>
+                    <option value="ing_designer_animation"  >Ing. De Diseño De Animacion Digital</option>
+                    <option value="ing_IA"  >Ing. De IA</option>
+                    <option value="data_science"  >Data Science</option>
+                </select>
+            </div>
+            </fieldset>
+            <fieldset>
+                <legend class="_legend"><h2>Infomacion De Contacto</h2></legend>
+            <!--EMAIL-->
+            <label for="em">Email</label>
+            <div>
+                <input name="email" class="_input_inf" type="email" placeholder="ejemplo@ejemplo.com" required id="em">
+            </div>
+            <!--TELEFONO-->
+            <label for="Telefono">Telefono</label>
+            <div>
+                <input name="n_telefone" class="_input_inf" type="text" placeholder="1234567890" required id="Telefono">
+            </div>
+            
+            <!--DATALIST & OPTION-->
+            <div>
+                <label>Quien Te Hablo De La Empresa?</label>
+                <input  class="_input_inf" list="referent">
+                <datalist class="_input_inf" id="referent"required>
+                    <option>Un Amigo</option>
+                    <option>Familiar</option>
+                    <option>Anuncio Por Web</option>
+                    <option>Cartel</option>
+                    <option>Otro (describalo)</option>
+                </datalist>
+            </div>
+            </fieldset>
+            <!--COMENTARIO ADICIONAL-->
+            <label for="men">Comentario (Opcional)</label>
+            <div>
+                <textarea row="6" name="comentary" placeholder="Deje su comentario" class="_input_inf label_commentary"></textarea>
+            </div>
+            <div>
+            <label for="check">Aceptas los <a class="label_link" href="/Curso de HTML Avanzado/Links (Avanzados)/Terms.html" download="/Curso de HTML Avanzado/Links (Avanzados)/Terms.html" target="_blank">Terminos y Condiciones</a></label><input type="checkbox" name="checkbox" id="check" required>
+            </div>
+            <!--SUBMIT-->
+            <div>
+                <input class="_input_inf_sub _input_inf"  type="submit" placeholder="Enviar" name="enviar_inf" name="Enviar" required>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

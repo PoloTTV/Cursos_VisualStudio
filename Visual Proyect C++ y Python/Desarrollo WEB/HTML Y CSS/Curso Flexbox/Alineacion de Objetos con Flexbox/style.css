@@ -1,0 +1,45 @@
+/*Esta parte del curso es para ver el como se pueden alinear los elementos tipo box con flexbox ya sea centrarlos separandose por igual, inicio, o haasta aal final (y dependiendo de como lo quieras alinear puedes hacerlo con "justufy-content" para eje principal o "align-content" para alinear de el eje cruzado cuando son dos o maasa lineas de elementos o "align-items" para sola linea de items con el eje cruzado*/
+.section__item
+{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-between;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 40px;
+}
+.item_box
+{
+    height: auto;
+    width: auto;
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.item--justify
+{
+    justify-content: space-around;
+}
+.item--justify_2
+{
+    justify-content: space-evenly;
+}
+.item--justify_3
+{
+    justify-content: center;
+}
+.item--justify_4
+{
+    justify-content: start;
+}
+.item--justify_5
+{
+    justify-content: end;
+}

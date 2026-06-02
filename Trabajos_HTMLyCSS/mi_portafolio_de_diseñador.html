@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Evelyn Esmeralda Martinez Arteaga</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fff5f7 0%, #ffe4e9 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        .header {
+            background: linear-gradient(135deg, #f1889b 0%, #f5a6b8 100%);
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+            border-bottom: 5px dashed rgba(255, 255, 255, 0.5);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .header h2 {
+            font-size: 1.6em;
+            margin: 15px 0;
+            font-weight: 600;
+        }
+
+        .header h3 {
+            font-size: 1.1em;
+            font-style: italic;
+            font-weight: normal;
+            margin-bottom: 10px;
+            opacity: 0.95;
+        }
+
+        /* SECCIÓN ABOUT */
+        .about {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            border-left: 5px solid #f1889b;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .about p {
+            line-height: 1.7;
+            margin: 12px 0;
+            text-align: justify;
+            font-size: 1em;
+        }
+
+        /* SECCIÓN HABILIDADES */
+        .skills {
+            max-width: 800px;
+            margin: 25px auto;
+            padding: 25px;
+            background-color: #fff9fa;
+            border-radius: 10px;
+            border: 2px solid #f1889b;
+        }
+
+        .skills h3 {
+            font-size: 1.4em;
+            color: #c2505c;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .skills p {
+            line-height: 1.7;
+            font-size: 1em;
+        }
+
+        /* SECCIÓN CONTACTO */
+        .contact {
+            max-width: 800px;
+            margin: 25px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            border-left: 5px solid #f1889b;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .contact h3 {
+            font-size: 1.4em;
+            color: #c2505c;
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            font-size: 1em;
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info strong {
+            color: #f1889b;
+            min-width: 100px;
+        }
+
+        .contact-info a {
+            color: #c2505c;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            color: #f1889b;
+            text-decoration: underline;
+        }
+
+        /* SECCIÓN REDES SOCIALES */
+        .social {
+            max-width: 800px;
+            margin: 25px auto;
+            padding: 25px;
+            background-color: #fff9fa;
+            border-radius: 10px;
+            border: 2px solid #f1889b;
+        }
+
+        .social h3 {
+            font-size: 1.4em;
+            color: #c2505c;
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f1889b;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+
+        .social-links a:hover {
+            background-color: #c2505c;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+        }
+
+        /* GALERÍA DE DISEÑOS */
+        .gallery {
+            max-width: 900px;
+            margin: 35px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .gallery h3 {
+            font-size: 1.5em;
+            color: #c2505c;
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .design-item {
+            text-align: center;
+            flex: 1 1 220px;
+        }
+
+        .design-item h4 {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 12px;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+        .item_alargado 
+        {
+            width: 400px;
+        }
+        .design-item img {
+            width: auto;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+            object-fit: cover;
+        }
+
+        .video-item {
+            flex: 1 1 220px;
+            text-align: center;
+        }
+
+        .video-item h4 {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 12px;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        .video-item iframe {
+            width: 280px;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+            border: none;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #f1889b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 35px;
+            font-size: 0.95em;
+            font-weight: 500;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .header h2 {
+                font-size: 1.3em;
+            }
+
+            .gallery-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .design-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <h1> Mi Portafolio </h1>
+        <img src="/Trabajos_HTMLyCSS/Imagenes/WhatsApp Image 2026-03-08 at 11.42.31 PM.jpeg" alt="Foto de perfil - Evelyn Esmeralda Martinez Arteaga" class="profile-img">
+        <h2>Evelyn Esmeralda Martinez Arteaga</h2>
+        <h3>Diseño con Propósito, Soluciones con Impacto</h3>
+    </header>
+
+    <!-- SECCIÓN ABOUT -->
+    <section class="about">
+        <p>
+            Hola, me especializo en transformar conceptos abstractos en identidades visuales impactantes. 
+            Mi enfoque combina la estrategia comercial con la estética limpia para que las marcas no solo 
+            se vean bien, sino que hablen por sí solas.
+        </p>
+        <p>
+            Ayudo a las empresas a darle presentación a sus productos para que el consumidor tenga una 
+            buena perspectiva visual. Esto con el fin de generar confianza con los clientes y, al generar 
+            diseños para una o varias empresas, a través de los trabajos realizados, poder generar 
+            recomendaciones y una buena calificación de mis trabajos como diseñadora.
+        </p>
+    </section>
+
+    <!-- SECCIÓN HABILIDADES -->
+    <section class="skills">
+        <h3> Habilidades</h3>
+        <p>
+            Cuento con profesioli en manejo de herramientas profesionales como 
+            <strong>Adobe Photoshop</strong> y <strong>Adobe Illustrator</strong>, 
+            lo que me permite crear diseños de alta calidad y creatividad.
+        </p>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section class="contact">
+        <h3> Datos de Contacto</h3>
+        <div class="contact-info">
+            <p>
+                <strong>Gmail:</strong>
+                <a href="mailto:230100081@cecytejalisco.edu.mx">230100081@cecytejalisco.edu.mx</a>
+            </p>
+            <p>
+                <strong>Teléfono:</strong> 332-988-5579
+            </p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN REDES SOCIALES -->
+    <section class="social">
+        <h3> Mis Redes Sociales</h3>
+        <div class="social-links">
+            <a href="https://www.instagram.com/evelyn.esm.mtz?igsh=ZWoxd2xxenpzNmp6" target="_blank">
+                Instagram
+            </a>
+            <a href="https://youtube.com/@evelynesmeraldamartinez?si=DBwRa3lA7WJN0L4R" target="_blank">
+                YouTube
+            </a>
+        </div>
+    </section>
+
+    <!-- GALERÍA DE DISEÑOS -->
+    <section class="gallery">
+        <h3> Mis Diseños</h3>
+        <div class="gallery-container">
+            <div class="design-item">
+                <h4>Diseño de Marca</h4>
+                <img src="/Trabajos_HTMLyCSS/Imagenes/WhatsApp Image 2026-03-08 at 11.09.59 PM.webp" alt="Volante Publicitario">
+            </div>
+            <div class="design-item">
+                <h4>Volante Publicitario</h4>
+                <img src="/Trabajos_HTMLyCSS/Imagenes/WhatsApp Image 2026-03-08 at 11.09.58 PM (1).webp" alt="Volante Publicitario">
+            </div>
+            <div class="design-item">
+                <h4>Triptico 1</h4>
+                <img src="/Trabajos_HTMLyCSS/Imagenes/WhatsApp Image 2026-03-08 at 11.09.57 PM (1).webp" alt="Volante Publicitario">
+            </div>
+            <div class="design-item">
+                <h4>Triptico 2</h4>
+                <img src="/Trabajos_HTMLyCSS/Imagenes/WhatsApp Image 2026-03-08 at 11.09.58 PM.webp" alt="Volante Publicitario">
+            </div>
+            <div class="design-item">
+                <h4>Logo</h4>
+                <img src="/Trabajos_HTMLyCSS/Imagenes/WhatsApp Image 2026-03-08 at 11.09.58 PM (2).webp" alt="Volante Publicitario">
+            </div>
+            
+            <div class="design-item">
+                <h4>Postal Digital</h4>
+                <img src="/Trabajos_HTMLyCSS/Imagenes/WhatsApp Image 2026-03-08 at 11.09.57 PM (1).webp alt="Volante Publicitario">
+            </div>
+            <div class="design-item item_alargado">
+                <h4>Tarjeta de Presentación</h4>
+                <img src="/Trabajos_HTMLyCSS/Imagenes/WhatsApp Image 2026-03-08 at 11.09.58 PM (3).webp" alt="Volante Publicitario">
+            </div>
+            <div class="design-item">
+                <h4>Cartel</h4>
+                <img src="/Trabajos_HTMLyCSS/Imagenes/WhatsApp Image 2026-03-08 at 11.09.59 PM (1).webp" alt="Cartel">
+            </div>
+            <div class="design-item">
+                <h4>Foto Montaje</h4>
+                <img src="/Trabajos_HTMLyCSS/Imagenes/WhatsApp Image 2026-03-08 at 11.09.58 PM (4).webp" alt="Postal">
+            </div>
+            <div class="design-item">
+                <h4>Pintura</h4>
+                <img src="/Trabajos_HTMLyCSS/Imagenes/WhatsApp Image 2026-03-08 at 11.09.59 PM (2).webp" alt="Diseño de Marca">
+            </div>
+            <div class="video-item">
+                <h4>Video de mi Trabajo</h4>
+                <iframe src="https://www.youtube.com/embed/35SIZZjo0LY" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 - Evelyn Esmeralda Martinez Arteaga. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

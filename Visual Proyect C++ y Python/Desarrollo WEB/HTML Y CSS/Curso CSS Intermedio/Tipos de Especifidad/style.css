@@ -1,0 +1,17 @@
+h1{
+    color: blue;
+}
+.Titulo
+{
+    color: green;
+}
+#tittle
+{
+    color: red;
+}
+.Titulo + #tittle
+{
+    color: aqua !important;
+    
+}
+/*Tipo de cascada, Puede ser que cuando pongamos algun tipo de codigo en CSS este ordenada de alguna forma desorganizada lo cual podria hacer que la organizacion que se le de por la aplicacion de programacion le de mas importancia a algun elemento y lo sobreexcriba, y para esto se utiliza tanto la especifidad como las Class o los ID*/

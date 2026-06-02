@@ -1,0 +1,44 @@
+/*Este sirve para poner un doble borde a un elemento que querramos de forma que no ocupe espacio */
+.body_1
+{
+    background-color: beige;
+}
+.box_1
+{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: azure;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+div .box_1:hover
+{
+    outline: 2px solid blue;
+}
+#email
+{
+    height: auto;
+    width: 200px;
+    text-align: left;
+    margin: auto;
+    position: relative;
+    left: 234px;
+    top: 40px;
+    border: none;
+    border-top:#000 solid 3px ;
+}
+#email:focus
+{
+    border-top: 3px solid blue;
+    color:blue;
+    color: blue;
+}
+#email:focus-visible
+{
+    outline: none;
+}
